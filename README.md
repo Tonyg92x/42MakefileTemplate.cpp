@@ -41,7 +41,7 @@ This is simply all the knowledge ive learned on Makefile at 42 school. Armorine8
 ## Installation
 Use this command to clone the repository :
 ```markdown
-git clone git@github.com:Tonyg92x/42MakefileTemplate.git
+git clone git@github.com:Tonyg92x/42MakefileTemplate.cpp.git
 ```
 Then simply make setup to delete all unecessery files
 <!-- Authors -->
