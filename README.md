@@ -12,7 +12,7 @@
 <h3 align="center">Makefile Template</h3>
 
   <p align="center">
-    I hope this can help new student's
+    I hope this can help new student's.
   </p>
 </div>
 
@@ -43,6 +43,7 @@ Use this command to clone the repository :
 ```markdown
 git clone git@github.com:Tonyg92x/42MakefileTemplate.git
 ```
+Then simply make setup to delete all unecessery files
 <!-- Authors -->
 ## Authors
 <p align="left">
