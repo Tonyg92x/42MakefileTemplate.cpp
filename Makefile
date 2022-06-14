@@ -6,7 +6,7 @@
 #    By: anthony <anthony@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/31 08:51:26 by aguay             #+#    #+#              #
-#    Updated: 2022/06/14 08:17:52 by anthony          ###   ########.fr        #
+#    Updated: 2022/06/14 11:31:36 by anthony          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@
 NAME 			= HelloWorld
 
 ## ----- COMPILER AND FLAGS ----- ##
-CC				= clang
+CC				= g++
 
 CFLAGS			= -Wall -Wextra -Werror -std=c++98
 
