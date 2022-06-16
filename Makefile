@@ -160,7 +160,7 @@ opti: CFLAGS += -O3
 opti: obj $(NAME)
 
 leak: obj $(NAME)
-	@valgrind ./minishell
+	@valgrind ./$(NAME)
 
 setup:
 	@rm -rf LICENSE images README.md .git
