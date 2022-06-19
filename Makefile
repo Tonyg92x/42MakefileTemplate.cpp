@@ -6,7 +6,7 @@
 #    By: aguay <aguay@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/31 08:51:26 by aguay             #+#    #+#              #
-#    Updated: 2022/06/16 08:10:24 by aguay            ###   ########.fr        #
+#    Updated: 2022/06/19 10:11:14 by aguay            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,6 +63,9 @@ MAIN_FILES		=						\
 
 CLASS_FILES		=						\
 
+HEADERS_FILES	=						\
+					main.hpp			\
+
 
 ## ----- ADDPREFIX TO FILES ----- ##
 
@@ -72,11 +75,13 @@ CLASS_SRCS		=	$(addprefix $(CLASS_DIR), $(CLASS_FILES))
 
 OBJ_FILES		=	$(SRCS_FILES:.cpp=.o) $(MAIN_FILES:.cpp=.o) $(CLASS_FILES:.cpp=.o)
 
-VPATH			=	$(SRCS_DIR) $(MAIN_DIR) $(CLASS_DIR)
+HEADERS_SRCS	=	$(addprefix $(INCLUDE_DIR), $(HEADERS_FILES))
+
+VPATH			=	$(SRCS_DIR) $(MAIN_DIR) $(CLASS_DIR) $(HEADERS_SRCS)
 
 ## ----- .C TO .O CONVERT ----- ##
 
-$(OBJ_DIR)%.o: %.cpp
+$(OBJ_DIR)%.o: %.cpp $(HEADERS_SRCS)
 	$(CC) $(CFLAGS) -I $(INCLUDE_DIR) -c $< -o $@
 #	Here you can add any header foler by adding -I $(header_directory)
 
